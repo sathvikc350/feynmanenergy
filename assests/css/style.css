@@ -1337,56 +1337,62 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0;
 }
 
-#faq #faq-list {
+#faq .faq-list {
   padding: 0;
   list-style: none;
 }
 
-#faq #faq-list li {
-  border-bottom: 1px solid #ddd;
+#faq .faq-list li {
+  border-bottom: 1px solid #e9eaed;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-#faq #faq-list a {
-  padding: 18px 0;
+#faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-family: #f82249;
+  font-size: 18px;
   line-height: 24px;
-  font-weight: 600;
-  padding-right: 20px;
+  font-weight: 400;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #e0072f;
+  transition: 0.3s;
 }
 
-#faq #faq-list i {
-  font-size: 24px;
+#faq .faq-list i {
+  font-size: 16px;
   position: absolute;
-  right: 0;
-  top: 16px;
+  left: 0;
+  top: -2px;
 }
 
-#faq #faq-list p {
-  margin-bottom: 20px;
+#faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 25px;
 }
 
-@media (max-width: 768px) {
-  #faq #faq-list a {
-    font-size: 18px;
-  }
-  #faq #faq-list i {
-    top: 13px;
-  }
+#faq .faq-list .icon-show {
+  display: none;
 }
 
-#faq #faq-list a.collapse {
+#faq .faq-list .collapsed {
+  color: black;
+}
+
+#faq .faq-list .collapsed:hover {
   color: #f82249;
 }
 
-#faq #faq-list a.collapsed {
-  color: #000;
+#faq .faq-list .collapsed .icon-show {
+  display: inline-block;
+  transition: 0.6s;
 }
 
-#faq #faq-list a.collapsed i::before {
-  content: "\f055" !important;
+#faq .faq-list .collapsed .icon-close {
+  display: none;
+  transition: 0.6s;
 }
 
 /*--------------------------------------------------------------
